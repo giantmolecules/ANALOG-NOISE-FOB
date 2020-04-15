@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -234,20 +234,20 @@
 <text x="1.905" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="DIP_14_SOCKET">
-<pad name="P$1" x="0" y="0" drill="0.6" shape="long"/>
-<pad name="P$2" x="0" y="2.54" drill="0.6" shape="long"/>
-<pad name="P$3" x="0" y="5.08" drill="0.6" shape="long"/>
-<pad name="P$4" x="0" y="7.62" drill="0.6" shape="long"/>
-<pad name="P$5" x="0" y="10.16" drill="0.6" shape="long"/>
-<pad name="P$6" x="0" y="12.7" drill="0.6" shape="long"/>
-<pad name="P$7" x="0" y="15.24" drill="0.6" shape="long"/>
-<pad name="P$8" x="-7.62" y="15.24" drill="0.6" shape="long"/>
-<pad name="P$9" x="-7.62" y="12.7" drill="0.6" shape="long"/>
-<pad name="P$10" x="-7.62" y="10.16" drill="0.6" shape="long"/>
-<pad name="P$11" x="-7.62" y="7.62" drill="0.6" shape="long"/>
-<pad name="P$12" x="-7.62" y="5.08" drill="0.6" shape="long"/>
-<pad name="P$13" x="-7.62" y="2.54" drill="0.6" shape="long"/>
-<pad name="P$14" x="-7.62" y="0" drill="0.6" shape="long"/>
+<pad name="P$1" x="0" y="0" drill="1.016" shape="long"/>
+<pad name="P$2" x="0" y="2.54" drill="1.016" shape="long"/>
+<pad name="P$3" x="0" y="5.08" drill="1.016" shape="long"/>
+<pad name="P$4" x="0" y="7.62" drill="1.016" shape="long"/>
+<pad name="P$5" x="0" y="10.16" drill="1.016" shape="long"/>
+<pad name="P$6" x="0" y="12.7" drill="1.016" shape="long"/>
+<pad name="P$7" x="0" y="15.24" drill="1.016" shape="long"/>
+<pad name="P$8" x="-7.62" y="15.24" drill="1.016" shape="long"/>
+<pad name="P$9" x="-7.62" y="12.7" drill="1.016" shape="long"/>
+<pad name="P$10" x="-7.62" y="10.16" drill="1.016" shape="long"/>
+<pad name="P$11" x="-7.62" y="7.62" drill="1.016" shape="long"/>
+<pad name="P$12" x="-7.62" y="5.08" drill="1.016" shape="long"/>
+<pad name="P$13" x="-7.62" y="2.54" drill="1.016" shape="long"/>
+<pad name="P$14" x="-7.62" y="0" drill="1.016" shape="long"/>
 <wire x1="-8.79" y1="-1.27" x2="1.17" y2="-1.27" width="0.254" layer="21"/>
 <wire x1="1.17" y1="-1.27" x2="1.17" y2="16.51" width="0.254" layer="21"/>
 <wire x1="1.17" y1="16.51" x2="-8.79" y2="16.51" width="0.254" layer="21"/>
@@ -778,9 +778,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="SUPPLY6" gate="GND" x="132.08" y="7.62" smashed="yes">
 <attribute name="VALUE" x="130.175" y="4.445" size="1.778" layer="96"/>
 </instance>
-<instance part="PH1" gate="G$1" x="101.6" y="5.08" smashed="yes">
-<attribute name="NAME" x="104.14" y="5.08" size="1.778" layer="95"/>
-<attribute name="VALUE" x="104.14" y="2.54" size="1.778" layer="96"/>
+<instance part="PH1" gate="G$1" x="106.68" y="7.62" smashed="yes">
+<attribute name="NAME" x="109.22" y="7.62" size="1.778" layer="95"/>
+<attribute name="VALUE" x="109.22" y="5.08" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -824,28 +824,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="81.28" y1="30.48" x2="81.28" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="U$8" gate="G$1" pin="P$1"/>
-<wire x1="101.6" y1="10.16" x2="101.6" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="PH1" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<wire x1="101.6" y1="0" x2="106.68" y2="0" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="P$2"/>
-<wire x1="106.68" y1="0" x2="106.68" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="U$10" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="0" x2="101.6" y2="-8.89" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="0" x2="142.24" y2="0" width="0.1524" layer="91"/>
-<junction x="106.68" y="0"/>
-<pinref part="U$1" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="0" x2="142.24" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="PH1" gate="G$1" pin="2"/>
-<junction x="101.6" y="0"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="-"/>
@@ -876,6 +854,30 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="U$8" gate="G$1" pin="P$7"/>
 <wire x1="132.08" y1="15.24" x2="132.08" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="P$2"/>
+<pinref part="PH1" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="15.24" x2="106.68" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="12.7" x2="116.84" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="12.7" x2="116.84" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="106.68" y="12.7"/>
+<pinref part="U$1" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="-5.08" x2="142.24" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="PH1" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="2.54" x2="106.68" y2="0" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="P$1"/>
+<wire x1="106.68" y1="0" x2="101.6" y2="0" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="0" x2="101.6" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="U$10" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="-8.89" width="0.1524" layer="91"/>
+<junction x="101.6" y="15.24"/>
 </segment>
 </net>
 </nets>
